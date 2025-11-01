@@ -539,6 +539,7 @@ body {
 .about-grid .person {
     position: relative;
     width: 100%;
+    height: 100%;
     bottom: -10% auto;
     z-index: 1;
 }
@@ -1082,19 +1083,21 @@ circle {
     overflow: hidden;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: center;
     cursor: pointer;
     width: 100%;
     height: 100%;
 }
 
 .card-image .image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    bottom: -10% auto;
-    overflow: hidden;
-    border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  bottom: -10% auto;
+  overflow: hidden;
+  border-radius: 2rem;
 }
 
 .card-image a .zoom{
@@ -1357,4 +1360,145 @@ circle {
     height: 100%;
     transform: translateX(10%);
     z-index: 1;
+}
+
+/*-- ------------ Responsive ------------*/
+
+@media (max-width: 1200px) {
+  .cta .btn, .cta .btn-primary {
+    margin-bottom: 0rem;
+  }
+  .cta {
+    margin-top: 1rem;
+  }
+  .btn-primary {
+    margin-left: 2.6rem;
+  }
+  .showcase-area .container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .card-image .image {
+    width: 40%;
+    border-radius: 1.5rem;
+  }
+  .showcase-info {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sub-heading {
+    text-align: center;
+    justify-content: center;
+  }
+  .about-grid .person {
+    bottom: 0;
+    width: 40%;
+  }
+  .showcase-area .text {
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .text {
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .showcase {
+    margin: 2rem auto 0 auto;
+    width: 50%;
+  }
+
+  .about .container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .cta {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .skills-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+@media (max-width: 700px) {
+  .section {
+    padding: 1rem;
+  }
+  .heading {
+    font-size: 2.8rem;
+  }
+  .box-heading {
+    margin-bottom: 0rem;
+    display: flex;
+    align-content: stretch;
+    align-items: flex-start;
+    margin-left: 5%;
+  }
+  .card-image .image {
+    width: 70%;
+    border-radius: 1.5rem;
+  }
+  .footer-social .social-list {
+    gap: 1.5rem;
+  }
+  .number {
+    font-size: 1rem;
+  }
+  .sk-title {
+    font-size: 0.9rem;
+  }
+  .square-icon{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .autor p {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .section {
+    padding: 0rem;
+  }
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .skills-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-mail .mail {
+    font-size: 0.7rem;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+  .square-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .autor p {
+    font-size: 0.6rem;
+  }
 }

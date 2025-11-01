@@ -35,6 +35,7 @@
 
 	</head>
     <body data-spy="scroll" data-target="#main-navbar">
+        <!--<div class="page-loader"></div>  Display loading image while page loads -->
         <div class="btn-back_to_top">
             <span class="ti-arrow-up"></span>
         </div>
@@ -57,6 +58,21 @@
                     <li class="nav-item">
                         <a aria-current="page" title="Accueil" href="index.html" class="nav-link">Accueil</a>
                     </li>
+                    <!-- Drodown menu example
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            Produits
+                            <svg class="icon chevron-icon" viewBox="0 0 24 24" width="14" height="14">
+                            <path d="M7 10l5 5 5-5z" fill="currentColor"></path>
+                            </svg>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Featured</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Seasonal</a></li>
+                        </ul>
+                    </li>-->
                     <li class="nav-item">
                         <a aria-current="page" title="Illustration" href="illustration.html" class="nav-link">Illustration</a>
                     </li>
@@ -88,7 +104,7 @@
     	<main>
             <!-- Background Home Section -->
             <div class="illustration-background section"  id="illustration">
-                <div class="bg" style="background-image: url('./img/Taiju.jpg');"></div>
+                <div class="bg" style="background-image: url('./img/portfolio/Taiju.jpg');"></div>
                 <div class="container">
                         <div class="illustration-background-info">
                             <div class="title">
@@ -98,7 +114,7 @@
                                 <h1 class="gradient-bg heading">Cosplay</h1>
                             </div>
                             <div class="cta">
-                                <a class="btn-primary" href="#porfolio">Me découvrir</a>
+                                <a class="btn-primary" href="#">Me découvrir</a>
                                 <a class="btn-cv" href="./CV misty.pdf" target="_blank" rel="noopener">
                                     <div class="docs">
                                         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
@@ -127,47 +143,45 @@
                 <!-- Veille Femme -->
                 <div class="container">
                     <div class="card-image">
-                        <img src="./img/jennika.jpg" class="image" alt="Jennika">
+                        <img src="./img/portfolio/jennika.jpg" class="image" alt="Jennika">
                     </div>
                     <div class="about-info">
                         <h1 class="sub-heading">Jennika</h1>
                         <p class="text">
-                           Personnification de Jennika, un personnage de l'univers des Tortues Ninja dans l'adaptation des comics IDW. Je l'ai fait à 50% fait main. Le bandeau, le haut et les bagages ont été réalisés par moi.
+                            Personnification de Jennika, un personnage de l'univers des Tortues Ninja dans l'adaptation des comics IDW.
+                            Je l'es fait a 50% fait main. Le bandeau, le haut et les bagages on été réalisé par moi.
                         </p>
                     </div>
                 </div>
                 <!-- Tortue Ninja -->
                 <div class="container">
                     <div class="about-info">
-                        <h1 class="sub-heading">Taiju Shiba</h1>
+                        <h1 class="sub-heading">Taiju</h1>
                         <p class="text">
-                            Taiju est un personnage dans Tokyo Revengers. Il a été complètement acheté, seule la perruque que j'ai stylisée.
+                            Taiju est une personnage dans Tokyo Revengers.
+                            Il a été complètement acheté, seul la perruque que j'ai stylisé.
                         </p>
                     </div>
                     <div class="card-image" id="img-container">
-                        <img src="./img/Taiju.jpg" style="width: 100%;" class="image" alt="Taiju">
+                        <img src="./img/portfolio/Taiju.jpg" class="image" alt="Taiju">
                     </div>
                 </div>
                 <!-- Femme fenêtre -->
                 <div class="container">
                     <div class="card-image" id="img-container">
-                        <img src="./img/Glamrock Bonnie.jpg" style="width: 100%;" class="image" alt="Glamrock Bonnie">
+                        <img src="./img/portfolio/Yuzuha.jpg" class="image" alt="Yuzuha">
                     </div>
                     <div class="about-info">
-                        <h1 class="sub-heading">Glamrock Bonnie</h1>
+                        <h1 class="sub-heading">Yuzuha Shiba</h1>
                         <p class="text">
-                            Glamrock Bonnie est un personnage de jeux vidéo dans FNAF security breach ruin.
-                            A la base c'est un animal tonique, mais je l'ai adapté en humain. Je l'ai fait main à 20 %, j'ai réalisé ces oreilles et les épaulettes.
+                            Glamrock Bonnie est un personnage de jeux vidéo dans FNAF securite breach ruin.
+                            A la base c'est un animal tonique mais je l'ai adapté en humain.
+                            Je l'ai fait main a 20%, j'ai réalisé ces oreilles et les epaulettes 
                         </p>
                     </div>
                 </div>
             </section>
             <!-- End About Section -->
-
-            <!-- Start Gallery Section -->
-            <div class="section gallery-cosplay gallery"></div>
-            <!-- End Gallery Section -->
-
             <!-- Foooter Section -->
             <footer class="section-footer section">
                 <div class="box-heading">
@@ -177,7 +191,7 @@
                     <ul class="social-list">
                             <!-- Instagram -->
                             <li>
-                                <a href="https://www.instagram.com/misty_nebeski" target="_blank" class="square-icon" data-wow-delay="0.3s" title="Instagram">
+                                <a href="https://www.instagram.com/misty_nebeski" class="square-icon" data-wow-delay="0.3s" title="Instagram">
                                     <span class="rotate-box-icon">
                                         <i class="fa-brands fa-instagram"></i>
                                     </span>
@@ -185,7 +199,7 @@
                             </li>
                             <!-- Mail -->
                             <li>
-                                <a href="mailto:mistynebeski@gmail.com" class="square-icon" data-wow-delay="0.4s" title="Mail">
+                                <a href="mailto:philibert.cassandre@example.com" class="square-icon" data-wow-delay="0.4s" title="Mail">
                                     <span class="box-icon">
                                         <i class="fa-solid fa-envelope"></i>
                                     </span>
@@ -193,7 +207,7 @@
                             </li>
                             <!-- LinkedIn -->
                             <li>
-                                <a href="https://www.linkedin.com/in/cassandre-philibert-601610356" target="_blank" class="square-icon" data-wow-delay="0.5s" title="LinkedIn">
+                                <a href="https://www.linkedin.com/in/cassandre-philibert-601610356" class="square-icon" data-wow-delay="0.5s" title="LinkedIn">
                                     <span class="box-icon">
                                         <i class="fa-brands fa-linkedin"></i>
                                     </span>
@@ -203,17 +217,17 @@
                 </div>
                 <div class="footer-info">
                     <div class="footer-mail">
-                        <a href="mailto:mistynebeski@gmail.com" class="mail" data-wow-delay="0.6s" title="Email">
+                        <a href="mailto:philibert.cassandre@example.com" class="mail" data-wow-delay="0.6s" title="Email">
                             <span class="rotate-box-icon">
                                 <i class="fa-light fa-envelope"></i> 
                             </span>
-                             mistynebeski@gmail.com
+                             philibert.cassandre@example.com
                         </a>
                     </div>
                     <div class="autor">
                         <p class="copyright">Copyright &copy; 2025 -
-                            Design par <a href="cosplay.html" class="theme-author">Misty</a> &amp; 
-                            Développer par <a href="https://grafmi.com" target="_blank" class="theme-author grafmi">Grafmi</a>
+                            Design par <a href="http:/" class="theme-author"> Misty</a> &amp; 
+                            Développer par <a href="https://grafmi.com" class="theme-author grafmi"> Grafmi</a>
                         </p>
                     </div>
                 </div>
@@ -227,5 +241,4 @@
 		<script src="js/menu.js"></script>
 
     </body>   
-
 </html>
